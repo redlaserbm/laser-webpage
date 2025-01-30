@@ -1,0 +1,164 @@
+/* We'll put stuff here shortly... */
+:root {
+    --nav-space: 15px;
+}
+
+* {
+    font-family: 'Indie Flower', 'Knewave', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+/* General settings for text size */
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Knewave', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+    font-size: 24px;
+}
+
+
+.header {
+    display:flex;
+    justify-content: center;
+    padding: 5px 5px 5px 20px;
+    background-color: #000;
+    color: #ffffff;
+}
+
+.centered {
+    font-size: 36px;
+    /* text-align: center; */
+}
+
+
+
+.header nav {
+    padding-top: 19px;
+    padding-right: 25px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    font-family: 'Indie Flower';
+    display: inline-block;
+    padding-left: min(1vw, var(--nav-space));
+    padding-right: min(1vw, var(--nav-space));
+}
+
+.header nav ul li:hover {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 48px;
+    display:inline-block;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+    background-color: #000;
+}
+
+.overlay-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,1);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.overlay-text img {
+    max-height: 64px;
+}
+
+.overlay-text ul {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    list-style-type: none;
+    gap: 15px;
+}
+
+.overlay-text ul li {
+    /* display: inline-block; */
+    padding-left: var(--nav-space);
+    padding-right: var(--nav-space);
+}
+
+/*
+footer img {
+    max-height: 32px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    
+}
+*/
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Video settings */
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: max(100vh, 100vw);
+    width: max(100vh, 100vw);
+    max-height: 100%;
+    max-width: 1200px;
+    object-fit: cover;
+}
+
+.bubble-container {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 50%;
+    min-width: 600px;
+    max-width: 1000px;
+    transform: translate(-50%, -50%);
+}
+
+/*
+#bg-vid {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    height: max(100vh, 100vw);
+    width: max(100vh, 100vw)
+}
+*/
