@@ -141,6 +141,7 @@ video {
     max-height: 100%;
     max-width: 1200px;
     object-fit: cover;
+    pointer-events: none;
 }
 
 .bubble-container {
