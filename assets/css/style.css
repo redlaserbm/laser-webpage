@@ -20,20 +20,20 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-    font-size: min(6vw, 36px);
+    font-size: min(4vw, 24px);
 }
 
 
 .header {
     display:flex;
     justify-content: center;
-    padding: 5px 5px 5px 20px;
+    padding: 5px 5px 5px 5px;
     background-color: #000;
     color: #ffffff;
 }
 
 .centered {
-    font-size: min(8vw, 48px);
+    font-size: min(6vw, 32px);
     /* text-align: center; */
 }
 
@@ -93,15 +93,15 @@ footer {
     text-align: center;
     color: white;
     background: rgba(0,0,0,1);
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
     margin: 10px;
     max-width: 90%;
-    width: 70vh;
+    width: 50vh;
 }
 
 .overlay-text img {
-    max-height: min(10vw, 120px);
+    max-height: min(8vw, 75px);
 }
 
 .overlay-text ul {
@@ -109,7 +109,7 @@ footer {
     justify-content: center;
     margin: 10px;
     list-style-type: none;
-    gap: min(1vw, 10px);
+    gap: min(0.5vw, 7.5px);
 }
 
 .overlay-text ul li {
@@ -123,10 +123,10 @@ video {
     position: fixed;
     left: 50%;
     transform: translate(-50%,0%);
-    height: max(100vh, 100vw);
-    width: max(100vh, 100vw);
-    /*max-height: 100%;
-    max-width: 1200px;*/
+    height: 100vh;
+    width: auto;
+    /*max-height: 100%;*/
+    /*max-width: 1200px;*/
     object-fit: cover;
     pointer-events: none;
     z-index: -1;
