@@ -2,7 +2,8 @@
 <head>
     <!-- Every webpage needs a head! -->
     <meta charset="UTF-8" />
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- We're going to use some fonts from Google Fonts for our webpage-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,6 +11,9 @@
 
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>the little world of laser</title>
+
+    <!-- Adding a javascript file-->
+    <script defer src="./assets/js/logic.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -17,7 +21,7 @@
     <!-- Every webpage needs a body! -->
 
     <header class="header">
-        <h1>redlaserbm</h1>
+        <h1 class="centered">redlaserbm</h1>
 
         <!--nav>
             <ul>
@@ -33,8 +37,33 @@
         <video autoplay muted loop playsinline disablePictureInPicture id="bg-vid">
             <source src="./assets/laser.mp4" type="video/mp4">
         </video>
+        
+        <!-- new-release container -->
+        <div class="bubble-container" id="new-release">
+            <div class="overlay-text">
+                <h1 class="centered">New Release</h1>
+                <iframe id="youtube-vid" width="560" height="1000" src="https://www.youtube.com/embed/UnO-fj95pV0?si=cIo6j7GLW1xgUvuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
 
-        <div class="bubble-container">
+            <div class="overlay-text">
+                <h1 class="centered">Listen Elsewhere</h1>
+                <ul>
+                    <li><a href="https://open.spotify.com/artist/3cyTdBiBY2ME2OtCm3DIu8?si=tC7omk6vSBSd84TSZu8u2Q"><img src="./assets/images/spotify_logo.png" alt="Spotify logo"/></a></li>
+                    <li><a href="https://music.apple.com/us/artist/redlaserbm/1478535773"><img src="./assets/images/apple_logo.png" alt="apple logo"></a></li>
+                    <li><a href="https://soundcloud.com/redlaserbm"><img src="./assets/images/sc_logo.png" alt="soundcloud logo"></a></li>
+                    <li><a href="https://redlaserbm.bandcamp.com/"><img src="./assets/images/bc_logo.png" alt="bandcamp logo"></a></li>
+                    <li><a href="https://www.youtube.com/@redlaserbm_phd"><img src="./assets/images/yt_logo.png" alt="youtube logo"></a></li>
+                </ul>
+            </div>
+
+            <div class="overlay-text" id="home-button">
+                <h1 class="centered"> Click For Social Links</h1>
+            </div>
+
+        </div>
+        
+        <!-- standard container-->
+        <div class="bubble-container" id="standard">
             <div class="overlay-text">
                 <h1 class="centered">Hi, I'm Laser</h1>
                 <p>the coolest genius in the world. I make music and draw art about all the awesome things in life.</p>
@@ -60,6 +89,10 @@
                     <li><a href="https://redlaserbm.bandcamp.com/"><img src="./assets/images/bc_logo.png" alt="bandcamp logo"></a></li>
                     <li><a href="https://www.youtube.com/@redlaserbm_phd"><img src="./assets/images/yt_logo.png" alt="youtube logo"></a></li>
                 </ul>
+            </div>
+
+            <div class="overlay-text" id="new-button">
+                <h1 class="centered"> Go to Newest Release</h1>
             </div>
         </div>
         
