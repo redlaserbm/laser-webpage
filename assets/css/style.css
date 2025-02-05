@@ -155,12 +155,6 @@ video {
     cursor:pointer;
 }
 
-/*
-#bg-vid {
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    height: max(100vh, 100vw);
-    width: max(100vh, 100vw)
+#new-button:hover {
+    cursor:pointer;
 }
-*/
